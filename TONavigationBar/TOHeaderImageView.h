@@ -27,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** An expandable image view that can be placed at the top of a scroll view. */
 @interface TOHeaderImageView : UIView
 
+@property (nonatomic, strong, readonly) UIImageView *imageView;
+
 /** The image that will be displayed in this view. */
 @property (nonatomic, strong) UIImage *image;
 

@@ -27,7 +27,7 @@
 /** The image view which displays the background image.
     This is kept as a private subview so its own height can change independently
     of the main view. (Necessary if it's a `UITableView` header view). */
-@property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong, readwrite) UIImageView *imageView;
 
 /** The view that displays the gradient view above the background image. */
 @property (nonatomic, strong) UIImageView *gradientView;
