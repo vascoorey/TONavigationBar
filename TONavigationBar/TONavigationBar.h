@@ -35,6 +35,9 @@ NS_ASSUME_NONNULL_BEGIN
  the bar's tint color to something different than the system default when the bar is not hidden. */
 @property (nonatomic, strong, nullable) UIColor *preferredTintColor;
 
+// Default whiteColor, used when the bar is hidden.
+@property (nonatomic, strong, null_resettable) UIColor *extendedTintColor;
+
 
 /** By default, when the bar is not hidden, the bar style is default. Use this property
  to override the bar style when not hidden. */

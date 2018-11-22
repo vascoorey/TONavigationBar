@@ -201,7 +201,7 @@
     }
     
     // Change the tint color once it has passed the middle of the bar
-    self.tintColor = (offsetHeight > barHeight * 0.5f) ? self.preferredTintColor : [UIColor whiteColor];
+    self.tintColor = (offsetHeight > barHeight * 0.5f) ? self.preferredTintColor : self.extendedTintColor;
     
     // Change the status bar colour once the offset has reached its midpoint
     CGFloat statusBarHeight = totalHeight - barHeight;
@@ -365,6 +365,20 @@
     if (_targetScrollView != nil) {
         [_targetScrollView addObserver:self forKeyPath:@"contentOffset" options:0 context:nil];
     }
+}
+
+@synthesize extendedTintColor = _extendedTintColor;
+
+- (void)setExtendedTintColor:(UIColor *)extendedTintColor {
+    _extendedTintColor = !extendedTintColor ? [UIColor whiteColor] : extendedTintColor;
+}
+
+- (UIColor *)extendedTintColor {
+    if (!_extendedTintColor) {
+        _extendedTintColor = [UIColor whiteColor];
+    }
+    
+    return _extendedTintColor;
 }
 
 @end
