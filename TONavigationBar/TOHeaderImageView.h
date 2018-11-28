@@ -21,16 +21,15 @@
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
+#import "TOHeaderViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /** An expandable image view that can be placed at the top of a scroll view. */
-@interface TOHeaderImageView : UIView
-
-@property (nonatomic, strong, readonly) UIImageView *imageView;
+@interface TOHeaderImageView : UIView <TOHeaderViewProtocol>
 
 /** The image that will be displayed in this view. */
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong, nullable) UIImage *image;
 
 /** Pass the Y value of `scrollView.contentOffset` to this property for the image to resize
  itself if the scroll view is pulled out of bounds. */

@@ -17,6 +17,7 @@
 		2281FE4C202E071300D47FE2 /* TOHeaderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2281FE4B202E071300D47FE2 /* TOHeaderImageView.m */; };
 		22AAB34A202E984E00B9B39D /* OK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22AAB349202E984E00B9B39D /* OK.jpg */; };
 		22AAB34C202EE43200B9B39D /* Firewatch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22AAB34B202EE43100B9B39D /* Firewatch.jpg */; };
+		DC96A9CB21A6F8D10061EF22 /* TOHeaderStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC96A9CA21A6F8D10061EF22 /* TOHeaderStackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,9 @@
 		2281FE4B202E071300D47FE2 /* TOHeaderImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHeaderImageView.m; sourceTree = "<group>"; };
 		22AAB349202E984E00B9B39D /* OK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OK.jpg; sourceTree = "<group>"; };
 		22AAB34B202EE43100B9B39D /* Firewatch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Firewatch.jpg; sourceTree = "<group>"; };
+		DC96A9C921A6F8D10061EF22 /* TOHeaderStackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHeaderStackView.h; sourceTree = "<group>"; };
+		DC96A9CA21A6F8D10061EF22 /* TOHeaderStackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHeaderStackView.m; sourceTree = "<group>"; };
+		DCCD491E21AC13A4007340C4 /* TOHeaderViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHeaderViewProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +93,11 @@
 		222D3A76202187D80015D098 /* TONavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				DCCD491E21AC13A4007340C4 /* TOHeaderViewProtocol.h */,
 				222D3A77202187FA0015D098 /* TONavigationBar.h */,
 				222D3A78202187FA0015D098 /* TONavigationBar.m */,
+				DC96A9C921A6F8D10061EF22 /* TOHeaderStackView.h */,
+				DC96A9CA21A6F8D10061EF22 /* TOHeaderStackView.m */,
 				2281FE4A202E071300D47FE2 /* TOHeaderImageView.h */,
 				2281FE4B202E071300D47FE2 /* TOHeaderImageView.m */,
 			);
@@ -170,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				222D3A7C20218D540015D098 /* SubViewController.m in Sources */,
+				DC96A9CB21A6F8D10061EF22 /* TOHeaderStackView.m in Sources */,
 				222D3A79202187FA0015D098 /* TONavigationBar.m in Sources */,
 				222D3A65202175C10015D098 /* ViewController.m in Sources */,
 				222D3A70202175C10015D098 /* main.m in Sources */,

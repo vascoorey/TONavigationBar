@@ -43,6 +43,15 @@
 
 @implementation TONavigationBar
 
+#pragma mark -
+#pragma mark Object Lifecycle
+
+- (void)dealloc {
+    if (_targetScrollView) {
+        [_targetScrollView removeObserver:self forKeyPath:@"contentOffset"];
+    }
+}
+
 #pragma mark - View Creation -
 
 - (instancetype)initWithCoder:(NSCoder *)coder
